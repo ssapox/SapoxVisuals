@@ -3,17 +3,14 @@ function dark_theme() {
     element.classList.toggle("dark-mode");
 }
 
-function fonctionClicImage(){
-	let image=document.querySelector("#image");
-	if (i==0){
-		image.setAttribute("src","oui.jpg");
-		i=1;
-	}
-	else {
-		image.setAttribute("src","non.jpg");
-		i=0;
-	}
-}
-
-let image=document.querySelector("#image");
-image.addEventListener("click",fonctionClicImage);
+changeImage = function() {
+    var image = document.getElementById('toggleImage');
+    var url1 = './images/oui.jpg';
+    var url2 = './images/non.jpg';
+    
+    if (image.getAttribute('src')==url1) {
+       image.setAttribute('src', url2);
+    } else {
+       image.setAttribute('src', url1);
+    }
+ }
