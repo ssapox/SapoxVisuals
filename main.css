@@ -165,26 +165,24 @@ h1::after {
 	width: 320px;
 	height: 180px;
 	overflow: hidden;
+	margin: 10px;
 }
 
 .thumbnail {
 	display: block;
 	width: 320px;
 	height: 180px;
-	margin: 10px;
 
 }
 
 .overlay {
 	position: absolute;
-	bottom: -180px;
-	left: 10px;
-	right: 0;
+	bottom: -190px;
 	background: transparent;
 	backdrop-filter: blur(4px);
 	overflow: hidden;
 	width: 320px;
-	height: 180px;
+	height: 190px;
 	transition: .5s ease;
 	z-index: 0;
 }
@@ -212,4 +210,31 @@ h1::after {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 20px;
+}
+
+.divToggleImage{
+	position: absolute;
+	display: block;
+	top: 200px;
+}
+
+h3 {
+	position: relative;
+	text-align: center;
+	margin-top: 20px;
+	color: #1d1d1d;
+}
+
+#toggleImage {
+	width: 320px;
+	height: 180px;
+	cursor: pointer;
+	transition: all .2s ease;
+}
+#toggleImage:hover {
+	transform: scale(1.020);
+	box-shadow: 0px 0px 30px -10px black;
+}
+#toggleImage:active {
+	transform: scale(1);
 }
