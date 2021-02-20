@@ -1,4 +1,3 @@
-/*
 function fonctionSecretCode(){
 	let i = window.prompt ("Entrez le code secret");
 	if (i == "NSI"){
@@ -9,4 +8,3 @@ function fonctionSecretCode(){
 	}
 }
 window.onload = fonctionSecretCode();
-*/
