@@ -175,8 +175,12 @@ h1::after {
 	width: 320px;
 	height: 180px;
 	trasnform: scale(1.05);
-
 }
+
+.thumbnail 4{
+transform: scale(1.05);
+	}
+
 /* Objet permettant le flou de l'image*/
 .overlay {
 	position: absolute;
