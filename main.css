@@ -164,21 +164,25 @@ h1::after {
 /* Eléments de la liste */
 .list {
 	position: relative;
-	width: 320px;
-	height: 180px;
+	width: 20%;
+	max-width: 320px;
+	height: 5%;
+	max-height: 180px;
 	overflow: hidden;
 	margin: 10px;
 }
 /* Image de chaque élément */
 .thumbnail {
 	display: block;
-	width: 320px;
-	height: 180px;
+	width: 100%;
+	max-width: 320px;
+	height: 100%;
+	max-height: 180px;
 	trasnform: scale(1.05);
 }
 
-.thumbnail 4{
-transform: scale(1.05);
+.thumbnail .4{
+	transform: scale(1.5);
 	}
 
 /* Objet permettant le flou de l'image*/
@@ -188,14 +192,16 @@ transform: scale(1.05);
 	background: transparent;
 	backdrop-filter: blur(4px);
 	overflow: hidden;
-	width: 320px;
-	height: 190px;
+	width: 100%;
+	max-width: 320px;
+	height: 100%;
+	max-height: 180px;
 	transition: .5s ease;
 	z-index: 0;
 }
 /* Montée de l'bjet au survol */
 .list:hover .overlay {
-	bottom: -10px;
+	bottom: 0px;
 }
 /* Texte dans chaque élément */
 .pList {
@@ -207,7 +213,8 @@ transform: scale(1.05);
 	background-image: linear-gradient(45deg, #ff7b00, #ffaa00);
 	box-shadow: 0px 0px 15px 0px #ff7b00, 0px 0px 15px 0px #ffaa00;
 	border-radius: 75px;
-	font-size: 15px;
+	font-size: 13px;
+	font-weight: bold;
 	color: var(--script)
 }
 /* Fond coloré de chague texte */
@@ -216,7 +223,6 @@ transform: scale(1.05);
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 20px;
 }
 
 /* Boite regroupant le texte et l'image */
